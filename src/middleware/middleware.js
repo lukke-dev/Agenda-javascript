@@ -1,6 +1,8 @@
 // module.exports = (req, res, next) => {
 exports.middlewareGlobal = (req, res, next) => {
-    res.locals.umaVarLocal = 'Este é  o valor da variavel';
+    res.locals.errors = req.flash('errors');
+    res.locals.success = req.flash('success');
+    res.locals.user = req.session.user;
     next();
 }
 

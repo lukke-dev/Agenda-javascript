@@ -9,6 +9,8 @@
                     <h1 class="text-center">Criar conta ou Entrar</h1>
                     <p class="text-center lead">Faça Login ou crie sua conta abaixo</p>
 
+                    <%- include('includes/messages'); %>
+
                     <div class="row">
 
                         <div class="col-lg">
@@ -43,7 +45,7 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Sua Senha</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                    <input type="password" class="form-control" id="exampleInputEmail1"
                                         aria-describedby="emailHelp" name="password">
                                 </div>
                                 <button type="submit" class="btn btn-primary">Entrar</button>
