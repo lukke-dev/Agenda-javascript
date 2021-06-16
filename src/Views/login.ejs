@@ -13,40 +13,36 @@
 
                     <div class="row">
 
-                        <div class="col-lg">
+                        <div class="col-lg my-5">
                             <h4>Faça seu Cadastro</h4>
                             <p>Preencha o formulário abaixo:</p>
-                            <form action="/login/register" method="POST">
+                            <form class="form-cadastro" action="/login/register" method="POST">
                                 <input type="hidden" name="_csrf" value="<%= csrfToken %>">
 
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Seu Email</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1"
-                                        aria-describedby="emailHelp" name="email">
+                                    <input type="email" class="form-control" name="email">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Sua Senha</label>
-                                    <input type="password" class="form-control" id="exampleInputEmail1"
-                                        aria-describedby="emailHelp" name="password">
+                                    <input type="password" class="form-control" name="password">
                                 </div>
                                 <button type="submit" class="btn btn-primary">Criar Minha Conta</button>
                             </form>
                         </div>
 
-                        <div class="col-lg">
+                        <div class="col-lg my-5">
                             <h4>Faça seu login</h4>
                             <p>Se você já tem uma conta, faça login abaixo:</p>
-                            <form action="/login/login" method="POST">
+                            <form class="form-login" action="/login/login" method="POST">
                                 <input type="hidden" name="_csrf" value="<%= csrfToken %>">
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Seu Email</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1"
-                                        aria-describedby="emailHelp" name="email">
+                                    <input type="email" class="form-control" name="email">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Sua Senha</label>
-                                    <input type="password" class="form-control" id="exampleInputEmail1"
-                                        aria-describedby="emailHelp" name="password">
+                                    <input type="password" class="form-control" name="password">
                                 </div>
                                 <button type="submit" class="btn btn-primary">Entrar</button>
                             </form>

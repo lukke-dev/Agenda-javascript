@@ -6,7 +6,11 @@ const path = require('path');
 const helmet = require('helmet');
 const csrf = require('csurf');
 const mongoose = require('mongoose');
-mongoose.connect(process.env.CONNECTSTRING, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.CONNECTSTRING, { 
+    useNewUrlParser: true, 
+    useUnifiedTopology: true,
+    useFindAndModify: false
+ })
 .then(() => {
     console.log('Conectei ao DB');
     app.emit('pronto');
